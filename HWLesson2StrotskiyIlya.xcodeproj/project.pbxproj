@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		967F749E8A64E3173EA3EE71 /* Pods_HWLesson2StrotskiyIlya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D6255E53B99A8EEDAFA9C5 /* Pods_HWLesson2StrotskiyIlya.framework */; };
 		C458682E2B0E2D7700BC7E1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458682D2B0E2D7700BC7E1D /* AppDelegate.swift */; };
 		C45868302B0E2D7700BC7E1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458682F2B0E2D7700BC7E1D /* SceneDelegate.swift */; };
 		C45868322B0E2D7700BC7E1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45868312B0E2D7700BC7E1D /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36742C42A17DE8B6ACBB4CE0 /* Pods-HWLesson2StrotskiyIlya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWLesson2StrotskiyIlya.release.xcconfig"; path = "Target Support Files/Pods-HWLesson2StrotskiyIlya/Pods-HWLesson2StrotskiyIlya.release.xcconfig"; sourceTree = "<group>"; };
+		AD47BBAC1BE383070A8D1AE0 /* Pods-HWLesson2StrotskiyIlya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWLesson2StrotskiyIlya.debug.xcconfig"; path = "Target Support Files/Pods-HWLesson2StrotskiyIlya/Pods-HWLesson2StrotskiyIlya.debug.xcconfig"; sourceTree = "<group>"; };
+		B9D6255E53B99A8EEDAFA9C5 /* Pods_HWLesson2StrotskiyIlya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWLesson2StrotskiyIlya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C458682A2B0E2D7700BC7E1D /* HWLesson2StrotskiyIlya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWLesson2StrotskiyIlya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C458682D2B0E2D7700BC7E1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C458682F2B0E2D7700BC7E1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967F749E8A64E3173EA3EE71 /* Pods_HWLesson2StrotskiyIlya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321757EA41CB32BC93E59B9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD47BBAC1BE383070A8D1AE0 /* Pods-HWLesson2StrotskiyIlya.debug.xcconfig */,
+				36742C42A17DE8B6ACBB4CE0 /* Pods-HWLesson2StrotskiyIlya.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF8192EEC5EB3F03CA94F5A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9D6255E53B99A8EEDAFA9C5 /* Pods_HWLesson2StrotskiyIlya.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C45868212B0E2D7700BC7E1D = {
 			isa = PBXGroup;
 			children = (
 				C458682C2B0E2D7700BC7E1D /* HWLesson2StrotskiyIlya */,
 				C458682B2B0E2D7700BC7E1D /* Products */,
+				321757EA41CB32BC93E59B9E /* Pods */,
+				AF8192EEC5EB3F03CA94F5A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C458683E2B0E2D7800BC7E1D /* Build configuration list for PBXNativeTarget "HWLesson2StrotskiyIlya" */;
 			buildPhases = (
+				D728ACB85FC2EF7076318E97 /* [CP] Check Pods Manifest.lock */,
 				C45868262B0E2D7700BC7E1D /* Sources */,
 				C45868272B0E2D7700BC7E1D /* Frameworks */,
 				C45868282B0E2D7700BC7E1D /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D728ACB85FC2EF7076318E97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HWLesson2StrotskiyIlya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C45868262B0E2D7700BC7E1D /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		C458683F2B0E2D7800BC7E1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD47BBAC1BE383070A8D1AE0 /* Pods-HWLesson2StrotskiyIlya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +366,7 @@
 		};
 		C45868402B0E2D7800BC7E1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36742C42A17DE8B6ACBB4CE0 /* Pods-HWLesson2StrotskiyIlya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
